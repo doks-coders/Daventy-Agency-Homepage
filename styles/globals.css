@@ -1,0 +1,341 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.uploadLabel {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.uploadButton {
+  display: none;
+}
+
+.carousel-demo .product-item .product-item-content {
+  border: 1px solid var(--surface-d);
+  border-radius: 3px;
+  margin: .3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.carousel-demo .product-item .product-image {
+  width: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.chakra-tabs__tablist .css-1kzy9ae{
+  border-bottom: 0px !important;
+}
+
+
+
+
+
+.hovercontainer {
+  position: relative;
+
+}
+
+
+
+.overlay {
+  display: none;
+  overflow: hidden;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.hovercontainer:hover .overlay {
+  display: flex;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.imageoverlay{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+
+}
+
+.hovercontainer:hover .imageoverlay {
+  -webkit-object-fit: none;
+  -ms-object-fit: none;
+  object-fit: none;
+  transform: scale(1.1);
+
+}
+.backgroundOverlay{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+}
+
+.greenOverlay{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+}
+
+
+
+.imagezoom{ 
+  background-size: 100%;
+  transition: .10s ease;
+  transition-property: 'background-size';
+}
+
+.hovercontainer:hover .imagezoom {
+  -webkit-animation-name: zoomIn; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: zoomIn;
+  animation-duration: 2s;
+
+}
+
+.hovercontainer:hover .greenOverlay {
+  -webkit-opacity: none;
+  -ms-opacity: none;
+ opacity: 0.9;
+
+}
+
+.hovercontainer:hover .backgroundOverlay {
+  -webkit-opacity: none;
+  -ms-opacity: none;
+ opacity: 0.7;
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ 
+}
+
+
+
+
+
+
+@-webkit-keyframes zoomIn {
+  0%   {  background-size: 100%;}
+  100%  {  background-size: 120%; }
+}
+
+/* Standard syntax */
+@keyframes zoomIn {
+  0%   {  background-size: 100%;}
+  100%  {  background-size: 120%; }
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.productItem{ 
+  display: flex;
+}
+
+.productButton{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+  opacity:0
+
+}
+
+.productItem:hover .productButton {
+  -webkit-opacity: 1;
+  -ms-opacity: 1;
+  opacity:1
+
+}
+
+/*Carousel Section*/
+
+
+.nextImage{
+  position: absolute;
+  bottom: 0;
+opacity: 0;
+  left: 100%;
+  right: 0;
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+
+}
+
+.CustomCarousel .nextImage {
+  opacity: 1;
+  
+  width: 100%;
+  left: 0;
+
+}
+
+
+/*Loading Section*/
+.fadeoverlay{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+  opacity: 0;
+}
+
+.layoutclass .fadeoverlay {
+  -webkit-opacity: none;
+  -ms-opacity: none;
+  opacity: 1;
+
+}
+
+
+
+
+/**/
+
+.sideButtonContainer{ 
+  display: flex;
+position: absolute;
+}
+
+
+.sideButtonText{
+  -webkit-transition: .3s ease;
+  transition:  .3s ease;
+ font-size: 0px;
+ position:  relative;
+
+}
+
+.sideButtonContainer:hover p {
+  font-size: 13px;
+  transition: .3s;
+  display: block;
+  position:  relative;
+  left: 0px;
+  width:100%
+}
+
+
+
+/**Overlay Element*/
+.fadeElement{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+  opacity:0;
+  display:'flex';
+  height:0%
+
+}
+
+.layoutFade:hover .fadeElement {
+  -webkit-opacity: 1;
+  height:100%;
+  -ms-opacity: 1;
+  opacity:1;
+  display:'flex';
+  
+}
+
+
+
+
+/***/
+.testmonialContainer{
+  -webkit-transition: .5s ease;
+  transition:  .5s ease;
+  opacity:0;
+  display:'flex';
+  height:0%
+
+}
+
+
+
+
+.testimonialEnter {
+  -webkit-animation-name: enterWithSlide;
+  -webkit-animation-duration: .5s;
+  animation-name: enterWithSlide;
+  animation-duration: .5s;
+
+}
+
+@-webkit-keyframes enterWithSlide {
+  from {
+    left: 10%;
+  opacity: 0;}
+  to {left: 0%;
+    opacity: 1;}
+
+}
+
+@keyframes enterWithSlide {
+  from {
+    left: 10%;
+  opacity: 0;}
+  to {left: 0%;
+    opacity: 1;}
+
+}
+
+.testimonialLeave {
+  -webkit-animation-name: leaveWithSlide;
+  -webkit-animation-duration: .5s;
+  animation-name: leaveWithSlide;
+  animation-duration: .5s;
+
+}
+
+@-webkit-keyframes leaveWithSlide {
+  from {left: 0%;
+  opacity: 1;}
+  to {left: -10%;
+  opacity: 0;}
+}
+
+@keyframes leaveWithSlide {
+  from {left: 0%;
+    opacity: 1;}
+    to {left: -10%;
+    opacity: 0;}
+}
+
+
